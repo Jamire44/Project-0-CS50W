@@ -1,23 +1,109 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    background-color: #202124;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .nav-links-container {
-
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 18px;
+    right: 15px;
 }
 
 .nav-links-container a {
     text-decoration: none;
-    color: #333;
-    margin-left: 15px;
-    font-size: 20px;
+    color: white;
 }
 
 .nav-links-container a:hover {
-    color: black;
     text-decoration: underline;
+}   
+
+.search-img-form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 71vh;
+}
+
+.header-container-img {
+    display: flex;
+    align-items: baseline; /* Aligns items along the baseline of the text */
+    justify-content: center; /* Center the contents */
+    height: 23vh; /* Adjust based on your design needs */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Typography */
+}
+
+h1 {
+    font-weight:500;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 10px;
+    align-items: center;
+    letter-spacing: -2px;  /* Adjust the value as needed */    
+}
+
+.subtext {
+    font-size: 24px; /* Smaller text size for 'images' */
+    margin-left: -70px; /* Space between 'Googlix' and 'images' */
+    vertical-align: bottom; /* Aligns 'images' to the bottom of the text line */
+    color:cornflowerblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    /* Aligns children side by side */
+    align-items: center;    /* Aligns children vertically in the center */
+    padding: 10px;
+}
+
+.search-bar-img {
+    width: 550px;
+    height: 28px;
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 10px; /* Space between the form and buttons */
+    margin-top: 11px;
+    background-color: #202124;
+    border: 1px solid #606368;
+    border-radius: 50px;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20id%3D%22Search--Streamline-Streamline--3.0%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20id%3D%22Search--Streamline-Streamline--3.0%22%3E%3Cpath%20d%3D%22M7.776%200.024984C5.755584%200.215736%203.9778800000000003%201.034688%202.548056%202.4334320000000003C1.2174%203.735144%200.353904%205.43228%200.086256%207.272C-0.039984%208.139672000000001%20-0.021624%209.180888%200.134928%2010.032C0.466536%2011.834736%201.372128%2013.480272%202.721864%2014.732688C4.0237680000000005%2015.940704%205.59752%2016.679424%207.416%2016.936152C7.798368000000001%2016.990128000000002%209.145871999999999%2016.997808%209.504%2016.948056C10.525368%2016.806144%2011.304408%2016.57884%2012.169776%2016.170192C12.812304000000001%2015.866783999999999%2013.370064000000001%2015.500760000000001%2014.087591999999999%2014.911655999999999L14.151336%2014.859288%2018.67368%2019.38408C21.820872%2022.532976%2023.225184000000002%2023.922552%2023.292%2023.953896C23.700792%2024.145728000000002%2024.145728000000002%2023.700792%2023.953896%2023.292C23.922552%2023.225184000000002%2022.532976%2021.820872%2019.38408%2018.67368L14.859288%2014.151336%2014.911655999999999%2014.087591999999999C15.500760000000001%2013.370064000000001%2015.866783999999999%2012.812304000000001%2016.170192%2012.169776C16.57884%2011.304408%2016.806144%2010.525368%2016.948056%209.504C16.997808%209.145871999999999%2016.990128000000002%207.798368000000001%2016.936152%207.416C16.679424%205.59752%2015.940704%204.0237680000000005%2014.732688%202.721864C13.35648%201.238712%2011.565432%200.322224%209.528%200.058584C9.176016%200.013056000000000002%208.117544%20-0.007248%207.776%200.024984M7.801728000000001%201.033032C5.933592%201.212576%204.177416%202.095872%202.939256%203.478632C2.0814719999999998%204.436592%201.523928%205.485608%201.2247679999999999%206.7045200000000005C1.055616%207.3937040000000005%201.022712%207.685447999999999%201.022712%208.496C1.022712%209.241752%201.0514400000000002%209.540912%201.1783759999999999%2010.116C1.416936%2011.196935999999999%201.946496%2012.302184%202.650392%2013.188312000000002C2.9028720000000003%2013.506167999999999%203.55008%2014.14764%203.864216%2014.39136C5.128488000000001%2015.372288%206.583056%2015.913368%208.136000000000001%2015.980400000000001C9.978456%2016.05996%2011.636808%2015.537576%2013.104000000000001%2014.41548C13.428408000000001%2014.167368000000002%2014.167368000000002%2013.428408000000001%2014.41548%2013.104000000000001C15.379128000000001%2011.843952%2015.912456%2010.407864%2015.979464000000002%208.892648C16.043544%207.443192%2015.745824%206.126480000000001%2015.078456000000001%204.908C14.724888000000002%204.262424%2014.338680000000002%203.7515359999999998%2013.789488%203.202824C13.176143999999999%202.590008%2012.588624%202.165832%2011.846568000000001%201.8000720000000001C11.053824%201.409352%2010.421592%201.20984%209.564%201.079784C9.180144%201.021584%208.193288%200.9954000000000001%207.801728000000001%201.033032%22%20stroke%3D%22none%22%20fill%3D%22%23FFFFFF%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: 10px center;  /* Icon is 10px from the left, vertically centered */
+    background-size: 20px;   /* Change the size of the icon */
+}
+
+.search-bar-img:hover,
+.search-bar-img:focus,
+.search-bar-img:active {
+    color: white;
+    border-color: #303134; 
+    background-color: #303134; 
+    outline: none;
+}
+
+
+.search-button-img-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-button-img {
+    color: white;
+    padding: 2px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #303134;
+    border: 1px solid #303134;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.search-button-img:hover {
+    border: 1px solid #606368;
 }
